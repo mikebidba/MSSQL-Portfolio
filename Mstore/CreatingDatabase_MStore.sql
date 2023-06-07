@@ -1,6 +1,7 @@
 /*
 File: CreatingDatabase_Mstore.sql
 Author: Michael Romero
+Created: June 2023
 Description: This script creates a small database that can be used to demo MS SQL Server DDL and DML features.  
 */
 

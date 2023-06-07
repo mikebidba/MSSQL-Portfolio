@@ -1,6 +1,7 @@
 /*
 File: DQL_DML_Operations_Mstore.sql
 Author: Michael Romero
+Created: June 2023
 
 Description: This script creates demonstration samples of Data Query Language (DQL) 
 and Data Manipulation Language (DML) executions on database Mstore.
@@ -252,9 +253,10 @@ SELECT P.*
 
 
 
-/* Delete OrderID 7 with verification*/
+/* Delete OrderId 7 with verification*/
 SELECT * FROM SALES.Orders WHERE OrderId = 7;
 DELETE FROM SALES.Orders WHERE OrderId = 7;
 SELECT * FROM SALES.Orders WHERE OrderId = 7;
+
 
 

@@ -1,6 +1,7 @@
 /*
 File: User-defined_Objects_Mstore.sql
 Author: Michael Romero
+Created: June 2023
 
 Description: This script creates demonstration samples of User-defined objects (e.g. Views, Stored Procedures, UDFs) on database Mstore.
 The stored Procedure SALES.uspDiscountWorstProduct will add a discount to worst selling product.
@@ -24,7 +25,7 @@ GO
 
 -- =============================================
 -- Author:		Michael Romero
--- Create date: 2023
+-- Created: June 2023
 -- Description:	List all the employees that work at Mstore
 -- =============================================
 CREATE VIEW SALES.vwPoductSalesByYear
@@ -45,12 +46,12 @@ GO
 
 /****** Creating Object: User Defined Function SALES.ufnGetWorstProductId ******/
 
-DROP FUNCTION IF EXISTS SALES.ufnGetWorstProductId;
+DROP FUNCTION IF EXISTS SALES.fn_GetWorstProductId;
 GO
 
 -- =============================================
 -- Author:		Michael Romero
--- Create date: 2023
+-- Created: June 2023
 -- Description:	Returns Worst selling ProductId at Mstore
 -- =============================================
 SET ANSI_NULLS ON
@@ -59,7 +60,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-CREATE FUNCTION SALES.ufnGetWorstProductId(@YEAR INT)
+CREATE FUNCTION SALES.fn_GetWorstProductId(@YEAR INT)
 RETURNS INT 
 AS 
 -- Returns ProductId
@@ -100,7 +101,7 @@ GO
 
 -- =============================================
 -- Author:		Michael Romero
--- Create date: 2023
+-- Created: June 2023
 -- Description:	Add discount to worst selling product unit price
 -- =============================================
 CREATE PROCEDURE [SALES].[uspDiscountWorstProduct] 
@@ -115,7 +116,7 @@ BEGIN
 		@UnitPrice_Old DECIMAL(10,2)
  	
 	/* Find Worst selling ProductId */
-	SELECT @ProductID = SALES.ufnGetWorstProductId(@Year)
+	SELECT @ProductID = SALES.fn_GetWorstProductId(@Year)
 
 	/* Store old Product price */
 	SELECT @UnitPrice_Old = UnitPrice FROM PRODUCTION.Product WHERE ProductId = @ProductID
