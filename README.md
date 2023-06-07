@@ -7,4 +7,6 @@ This database is a simplified version of the classic database store.  Start your
 
 Script User-defined_Objects_Mstore.sql should be execute in its entire form.  This script creates a view used in UDF that is eventually used in a stored procedure.  This 3-step process could have been accomplished in the stored procedure alone but I wanted to show the creation and integration of User Defined Objects in the Mstore database.
 
+Script AuditLogging_WithTrigger_Mstore.sql demonstrates trigger usage on database Mstore.  The stored procedure for SALES.ispOrders will insert new orders. Trigger SALES.trgOrdersHistory will add order operations to SALES.OrdersHistory.  SALES.OrdersHistory includes a hashing column that can be used later to verify the data entry integrity against manual data alteration. Please execute the first 4 object in order 1 through 4. After these required executions you can run any of the 3 EXEC TESTs or any testing of your own.
+
 Thank you and enjoy.    
