@@ -3,7 +3,7 @@ File: RemovingDuplicateOrders_Mstore.sql
 Author: Michael Romero
 Created: June 2023
 
-Description: This script demostrates different 4 ways to remove duplicates in database Mstore.  
+Description: This script demostrates 4 different ways to remove duplicates in database Mstore.  
 There are many variations and combination of these solutions but these 4 show some common techniques.
 
 Prerequisite: Execute script CreatingDatabase_Mstore.sql
