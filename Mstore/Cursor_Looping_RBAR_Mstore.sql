@@ -3,10 +3,10 @@ File: Cursors_Looping_RBAR_Mstore.sql
 Author: Michael Romero
 Created: June 2023
 
-Description: This script creates demonstration sample of Cursor looping through and updating a dataset and comparing against a set-based operation.
+Description: This script creates a demonstration sample of a Cursor looping through and updating a dataset and comparing it against a set-based operation.
 RBAR (Row by Agonizing Row) is a SQL term for looping through and performing an action on a dataset one row at a time.
 For small datasets like Mstore this is not an issue but in larger datasets or as small datasets grow over time this can result in a major performance issue.
-If there is a set-based way to perform your task always choose it over looping with a cursor. 
+If there is a set-based way to perform your task, always choose it over looping with a cursor. 
 
 Note: Omitting transaction declaration as this is simple demonstration.
 
