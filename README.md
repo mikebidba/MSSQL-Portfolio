@@ -9,4 +9,7 @@ Script User-defined_Objects_Mstore.sql should be execute in its entire form.  Th
 
 Script AuditLogging_WithTrigger_Mstore.sql demonstrates trigger usage on database Mstore.  The stored procedure for SALES.ispOrders will insert new orders. Trigger SALES.trgOrdersHistory will add order operations to SALES.OrdersHistory.  SALES.OrdersHistory includes a hashing column that can be used later to verify the data entry integrity against manual data alteration. Please execute the first 4 object in order 1 through 4. After these required executions you can run any of the 3 EXEC TESTs or any testing of your own.
 
+Script RemovingDuplicateOrders_Mstore.sql demostrates 4 different ways to remove duplicates in database Mstore.  
+There are many variations and combination of these solutions but these 4 show some the common techniques used to resolve this issue.  Outside of these SQL scripts, there is the option of using SSIS SORT task to remove duplicates from your data.  
+
 Thank you and enjoy.    
