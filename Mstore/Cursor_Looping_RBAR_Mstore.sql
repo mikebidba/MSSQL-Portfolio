@@ -1,5 +1,5 @@
 /*
-File: Cursors_Looping_RBAR_Mstore.sq
+File: Cursors_Looping_RBAR_Mstore.sql
 Author: Michael Romero
 Created: June 2023
 
