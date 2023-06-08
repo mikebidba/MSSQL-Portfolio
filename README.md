@@ -12,4 +12,10 @@ Script AuditLogging_WithTrigger_Mstore.sql demonstrates trigger usage on databas
 Script RemovingDuplicateOrders_Mstore.sql demostrates 4 different ways to remove duplicates in database Mstore.  
 There are many variations and combination of these solutions but these 4 show some the common techniques used to resolve this issue.  Outside of these SQL scripts, there is the option of using SSIS SORT task to remove duplicates from your data.  
 
+Script Cursor_Looping_RBAR_Mstore.sql creates a demonstration sample of Cursor looping through and updating a dataset and comparing against a set-based operation.
+RBAR (Row by Agonizing Row) is a SQL term for looping through and performing an action on a dataset one row at a time.
+For small datasets like Mstore this is not an issue but in larger datasets or as small datasets grow over time this can result in a major performance issue.
+If there is a set-based way to perform your task, always choose it over looping with a cursor.
+
+
 Thank you and enjoy.    
