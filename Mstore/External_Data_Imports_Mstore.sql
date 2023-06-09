@@ -29,7 +29,7 @@ SELECT * FROM PRODUCTION.ProductCategory;
 GO
 
 
-/****** Senario 1: Using BULK INSERT and Staging table ******/
+/****** Scenario 1: Using BULK INSERT and Staging table ******/
 
 
 --Create Staging table
