@@ -16,7 +16,7 @@ USE Mstore;
 GO
 
  
-/****** Senario 1 - Same order entered 3 times - Classic and my favorite ******/
+/****** Scenario 1 - Same order entered 3 times - Classic and my favorite ******/
 
 --Loading orders with all columns identical
 INSERT SALES.Orders (CustomerId, ProductId, UnitsSold, OrderDate, SalesPersonId)
@@ -58,7 +58,7 @@ GO
 
 
 
-/****** Senario 2 - Same order entered 3 times - Using a Windows Function ******/
+/****** Scenario 2 - Same order entered 3 times - Using a Windows Function ******/
 
 --This method only works when a single table is involved.
 
@@ -102,7 +102,7 @@ GO
 
 
 
-/****** Senario 3 - Same order entered 3 times - Using a Windows Function and a variable table ******/
+/****** Scenario 3 - Same order entered 3 times - Using a Windows Function and a variable table ******/
 
 --This method demonstate variable table usage but it could have easily been accomplished with a Temp table or subquery.
 
@@ -153,7 +153,7 @@ GO
 
 
 
-/****** Senario 4 - Same order entered 3 times - Using a Windows Function and a Subquery ******/
+/****** Scenario 4 - Same order entered 3 times - Using a Windows Function and a Subquery ******/
 
 --This method only works when a single table is involved.
 
@@ -195,7 +195,7 @@ GO
 
 
 
-/****** Senario 4B - Same order entered 3 times - Using a Windows Function and a Subquery ******/
+/****** Scenario 4B - Same order entered 3 times - Using a Windows Function and a Subquery ******/
 
 --This method works when 1 or tables are involved.
 

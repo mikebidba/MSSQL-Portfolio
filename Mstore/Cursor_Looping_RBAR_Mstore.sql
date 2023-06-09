@@ -1,5 +1,5 @@
 /*
-File: Cursors_Looping_RBAR_Mstore.sql
+File: Cursor_Looping_RBAR_Mstore.sql
 Author: Michael Romero
 Created: June 2023
 
@@ -28,7 +28,7 @@ GO
 
 
 
-/****** Senario 1: Cursor to loop through each product and increase unit price by 10% ******/
+/****** Scenario 1: Cursor to loop through each product and increase unit price by 10% ******/
 
 --Adding and initializing timer
 DECLARE 
@@ -95,7 +95,7 @@ GO
 
 
 
-/****** Senario 2: Using Set-based operation to update product and increase unit price by 10% ******/
+/****** Scenario 2: Using Set-based operation to update product and increase unit price by 10% ******/
 
 
 DECLARE 
