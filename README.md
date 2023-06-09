@@ -19,7 +19,7 @@ If there is a set-based way to perform your task, always choose it over looping 
 
 Script External_Data_Imports_Mstore.sql creates a demonstration of external data insert techniques.  There are many ETL tools available that accomplish such as SSIS, but I wanted to show some techniques based on T-SQL. 
 
-
+Script Indexes_Locks_Mstore.sql creates a demonstration of Indexes and their affects on query execution plans.
 
 
 Thank you and enjoy.    
