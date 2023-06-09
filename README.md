@@ -17,5 +17,9 @@ RBAR (Row by Agonizing Row) is a SQL term for looping through and performing an 
 For small datasets like Mstore this is not an issue but in larger datasets or as small datasets grow over time this can result in a major performance issue.
 If there is a set-based way to perform your task, always choose it over looping with a cursor.
 
+Script External_Data_Imports_Mstore.sql creates a demonstration of external data insert techniques.  There are many ETL tools available that accomplish such as SSIS, but I wanted to show some techniques based on T-SQL. 
+
+
+
 
 Thank you and enjoy.    
