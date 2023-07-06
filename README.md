@@ -21,5 +21,6 @@ Script External_Data_Imports_Mstore.sql creates a demonstration of external data
 
 Script Indexes_Locks_Mstore.sql creates a demonstration of Indexes and their affects on query execution plans.
 
+Script Pivot_Unpivot_Mstore.sql creates a demonstration of Pivot and Unpivot. Pivot converts rows data of the table into column data. Pivot denormalize data. Unpivot converts column data of the table into row data.  Unpivot normalize data. 
 
 Thank you and enjoy.    
